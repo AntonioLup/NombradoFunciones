@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         VehiculoElectrico hibrido = new VehiculoElectrico();
+
+
         VehiculoCombustible combustible = new VehiculoCombustible();
 
         Scanner respuesta = new Scanner(System.in);
@@ -16,6 +18,7 @@ public class Main {
             System.out.println("pues pondre gasolina");
         } else if (coche.equals("combustible")){
             combustible.setModelo("peuyot");
+            System.out.println(combustible.llenar(3));
             System.out.println(combustible.getModelo());
         }else if (coche.equals("hibrido")){
             hibrido.setModelo("seat");

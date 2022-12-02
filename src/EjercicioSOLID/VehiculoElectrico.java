@@ -1,6 +1,6 @@
 package EjercicioSOLID;
 
-public class VehiculoElectrico extends Vehiculo {
+public class VehiculoElectrico implements Vehiculo {
     String modelo;
 
     @Override

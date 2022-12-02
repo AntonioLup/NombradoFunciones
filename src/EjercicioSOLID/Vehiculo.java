@@ -1,5 +1,10 @@
 package EjercicioSOLID;
 
-public abstract class Vehiculo {
-    abstract int acelerar(int velocidadInicial);
-}
+  interface Vehiculo {
+     int acelerar(int velocidadInicial);
+
+  }
+  interface VehiculoHibrido {
+     int llenar(int litros);
+
+  }

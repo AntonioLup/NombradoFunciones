@@ -1,7 +1,8 @@
 package EjercicioSOLID;
 
-public class VehiculoCombustible extends Vehiculo {
+public class VehiculoCombustible implements Vehiculo, VehiculoHibrido {
     String modelo;
+
 
     @Override
     public int acelerar(int velocidadInicial) {
@@ -15,5 +16,10 @@ public class VehiculoCombustible extends Vehiculo {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    @Override
+    public int llenar(int litros) {
+        return litros += 30;
     }
 }
